@@ -6,5 +6,17 @@ import { ApiService } from '../api.service';
   templateUrl: './view-employee.component.html',
   styleUrls: ['./view-employee.component.css']
 })
-export class ViewEmployeeComponent {}
+export class ViewEmployeeComponent {
+  constructor(private api:ApiService){
+
+    api.viewEmployee().subscribe(
+  
+      (response)=>{
+        this.data=response;
+      }
+    )
+  }
+  
+  data:any=[]
+}
 
