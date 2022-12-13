@@ -7,3 +7,4 @@ import { ApiService } from '../api.service';
   styleUrls: ['./view-employee.component.css']
 })
 export class ViewEmployeeComponent {}
+
