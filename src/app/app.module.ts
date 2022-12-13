@@ -8,7 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
-import { NavbarComponent } from './navbar/navbar.component'
+import { NavbarComponent } from './navbar/navbar.component';
+import { ViewEmployeeComponent } from './view-employee/view-employee.component'
 
 const myRoute:Routes = [
   {
@@ -28,7 +29,8 @@ const myRoute:Routes = [
     AppComponent,
     AdminLoginComponent,
     AddEmployeeComponent,
-    NavbarComponent
+    NavbarComponent,
+    ViewEmployeeComponent
   ],
   imports: [
     BrowserModule,
